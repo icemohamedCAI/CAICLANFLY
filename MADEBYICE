@@ -1,0 +1,135 @@
+-- Fly GUI v1 by CAI CLAN MADE BY ICE --
+
+-- GUI Script by CAI CLAN --
+
+local gui = Instance.new("ScreenGui")
+local frame = Instance.new("Frame")
+local buttonUp = Instance.new("TextButton")
+local buttonDown = Instance.new("TextButton")
+local buttonToggle = Instance.new("TextButton")
+local label = Instance.new("TextLabel")
+local buttonPlus = Instance.new("TextButton")
+local labelSpeed = Instance.new("TextLabel")
+local buttonMinus = Instance.new("TextButton")
+local buttonClose = Instance.new("TextButton")
+local buttonMinimize = Instance.new("TextButton")
+local buttonMinimize2 = Instance.new("TextButton")
+
+gui.Name = "CAI CLAN"
+gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+gui.ResetOnSpawn = false
+
+frame.Parent = gui
+frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+frame.Position = UDim2.new(0.1, 0, 0.38, 0)
+frame.Size = UDim2.new(0, 190, 0, 57)
+
+buttonUp.Name = "اطلع"
+buttonUp.Parent = frame
+buttonUp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+buttonUp.Size = UDim2.new(0, 44, 0, 28)
+buttonUp.Font = Enum.Font.SourceSans
+buttonUp.Text = "↑"
+buttonUp.TextColor3 = Color3.fromRGB(0, 0, 0)
+buttonUp.TextSize = 14
+
+buttonDown.Name = "انزل"
+buttonDown.Parent = frame
+buttonDown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+buttonDown.Position = UDim2.new(0, 0, 0.5, 0)
+buttonDown.Size = UDim2.new(0, 44, 0, 28)
+buttonDown.Font = Enum.Font.SourceSans
+buttonDown.Text = "↓"
+buttonDown.TextColor3 = Color3.fromRGB(0, 0, 0)
+buttonDown.TextSize = 14
+
+buttonToggle.Name = "buttonToggle"
+buttonToggle.Parent = frame
+buttonToggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+buttonToggle.Position = UDim2.new(0.7, 0, 0.5, 0)
+buttonToggle.Size = UDim2.new(0, 56, 0, 28)
+buttonToggle.Font = Enum.Font.SourceSans
+buttonToggle.Text = "طير"
+buttonToggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+buttonToggle.TextSize = 14
+
+label.Parent = frame
+label.BackgroundColor3 = Color3.fromRGB(255, 165, 0)
+label.Position = UDim2.new(0.47, 0, 0, 0)
+label.Size = UDim2.new(0, 100, 0, 28)
+label.Font = Enum.Font.SourceSans
+label.Text = "By CAI CLAN MADE BY ICE"
+label.TextColor3 = Color3.fromRGB(0, 0, 0)
+label.TextScaled = true
+label.TextSize = 14
+label.TextWrapped = true
+
+buttonPlus.Name = "buttonPlus"
+buttonPlus.Parent = frame
+buttonPlus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+buttonPlus.Position = UDim2.new(0.23, 0, 0, 0)
+buttonPlus.Size = UDim2.new(0, 45, 0, 28)
+buttonPlus.Font = Enum.Font.SourceSans
+buttonPlus.Text = "+"
+buttonPlus.TextColor3 = Color3.fromRGB(0, 0, 0)
+buttonPlus.TextScaled = true
+buttonPlus.TextSize = 14
+buttonPlus.TextWrapped = true
+
+labelSpeed.Name = "سرعة الطيران"
+labelSpeed.Parent = frame
+labelSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+labelSpeed.Position = UDim2.new(0.47, 0, 0.5, 0)
+labelSpeed.Size = UDim2.new(0, 44, 0, 28)
+labelSpeed.Font = Enum.Font.SourceSans
+labelSpeed.Text = "1"
+labelSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+labelSpeed.TextScaled = true
+labelSpeed.TextSize = 14
+labelSpeed.TextWrapped = true
+
+buttonMinus.Name = "buttonMinus"
+buttonMinus.Parent = frame
+buttonMinus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+buttonMinus.Position = UDim2.new(0.23, 0, 0.5, 0)
+buttonMinus.Size = UDim2.new(0, 45, 0, 29)
+buttonMinus.Font = Enum.Font.SourceSans
+buttonMinus.Text = "-"
+buttonMinus.TextColor3 = Color3.fromRGB(0, 0, 0)
+buttonMinus.TextScaled = true
+buttonMinus.TextSize = 14
+buttonMinus.TextWrapped = true
+
+buttonClose.Name = "اغلق السكربت"
+buttonClose.Parent = gui.Frame
+buttonClose.BackgroundColor3 = Color3.fromRGB(255, 5, 5)
+buttonClose.Font = "Michroma"
+buttonClose.Size = UDim2.new(0, 45, 0, 28)
+buttonClose.Text = "x"
+buttonClose.TextSize = 30
+buttonClose.Position = UDim2.new(0, 0, -1, 27)
+
+buttonMinimize.Name = "buttonMinimize"
+buttonMinimize.Parent = gui.Frame
+buttonMinimize.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+buttonMinimize.Font = "Michroma"
+buttonMinimize.Size = UDim2.new(0, 45, 0, 28)
+buttonMinimize.Text = "-"
+buttonMinimize.TextSize = 40
+buttonMinimize.Position = UDim2.new(0, 44, -1, 27)
+
+buttonMinimize2.Name = "buttonMinimize2"
+buttonMinimize2.Parent = gui.Frame
+buttonMinimize2.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
+buttonMinimize2.Font = "SourceSans"
+buttonMinimize2.Size = UDim2.new(0, 45, 0, 28)
+buttonMinimize2.Text = "+"
+buttonMinimize2.TextSize = 40
+buttonMinimize2.Position = UDim2.new(0, 44, -1, 57)
+buttonMinimize2.Visible = false
+
+-- (Code remains unchanged below this point) --
+
+-- You can add the rest of the unchanged parts of the script here.
